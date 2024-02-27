@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Hts</title>
+</head>
+<body>
+
+    <header>
+        <div class="main-container d-flex">
+           <div class="header-left">
+            <a href="#" class="logo-img"><img src="img/logo.png" alt="hts logo"></a>
+           </div>
+
+           <nav id="responsiveNav">
+            <ul class="navlinks">
+                <li><a href="index.html" id="click">HOME</a></li>
+                <li><a href="about.html" id="click">ABOUT US</a></li>
+                <li><a href="services.html" id="click">TAXI SERVICE</a><i class="ph-bold ph-caret-down"></i>
+                    <ul class="submenu">
+                        <li><a href="detailsPage.html" id="click">Haridwar Taxi Service</a></li>
+                        <li><a href="#" id="click">Rishikesh Taxi Service</a></li>
+                        <li><a href="#" id="click">Dehradun Taxi Service</a></li>
+                        <li><a href="#" id="click">Mussoorie Taxi Service</a></li>
+                        <li><a href="#" id="click">Auli Taxi Service</a></li>
+                        <li><a href="#" id="click">Chopta Taxi Service</a></li>
+                        <li><a href="#" id="click">Chardham Yatra Taxi Service</a></li>
+                        <li><a href="#" id="click">Kedarnath Badrinath Taxi Service</a></li>
+                        <li><a href="#" id="click">Yamunotri Gangotri Taxi Service</a></li>
+                        <li><a href="#" id="click">Kedarnath Taxi Service</a></li>
+                        <li><a href="#" id="click">Badrinath Taxi Service</a></li>
+                        <li><a href="#" id="click">Gangotri Taxi Service</a></li>
+                        <li><a href="#" id="click">Auli Chopta Taxi Service</a></li>
+                        <li><a href="#" id="click">Rishikesh To Delhi Taxi Service</a></li>
+                        <li><a href="#" id="click">Haridwar to Nanital Taxi Service</a></li>
+                        <li><a href="#" id="click">Dehradun Jolly Grant Airport Taxi Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="packages.html" id="click">PACKAGE</a></li>
+                <li><a href="cars.html" class="carsc" id="click">CARS</a></li>
+                <li><a href="contact.html" id="click">CONTACT US</a></li>
+
+            </ul>
+
+            <button class="nav_btn_close" onclick="nav_close();">
+                <i class="ph-fill ph-x-circle"></i>
+              </button>
+           </nav>
+
+           <div class="header-right">
+            <a href="tel:+917505393495"><i class="ph-fill ph-phone"></i><span>+917505393495</span></a>
+
+            <button class="nav_btn_open" id="menutroggle" onclick="nav_open();">
+                <i class="ph ph-list"></i>
+              </button>
+           </div>
+        </div>
+    </header>
+
+
+    <section class="home-topbg">
+        <div class="main-container">
+            <div class="tp-bg-d">
+                <img src="img/car.png" alt="">
+            </div>
+            <div class="top-block">
+            <div class="top-left">
+            <h3>100%  Trusted car rental  platform in the  Uttarakhand India</h3>
+            <h1>Find Your Best <br>
+                <span>Dream Car for Rental</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Aliquam tristique orci lacus ut 
+                dignissim sed. Mauris est posuere est purus. Lectus nisi dignissim vestibulum 
+                at elit. Eget pretium cursus vitae vitae tempus elementum blandit.</p>
+            <a href="cars.html" class="commontBtn topBtn">View All Cars</a>
+            </div>
+
+            <div class="top-right">
+                <h3>All India Cab Service</h3>
+
+                <div class="top-frm-btn">
+                    <div class="form-top-btn fflex">
+                        <span> <a href="#tabone" class="out-s">Outstation</a></span>
+                        <span><a href="#tabtwo" class="loc">Local / Airport</a></span>
+                    </div>
+
+                    <div class="trip-r fflex">
+                        <label for="roundtrip" class="radio-container">
+                            Round Trip
+                            <input type="radio" name="radio" id="roundtrip" checked="checked">
+                            <span class="checkmark"><i class="ph-fill ph-radio-button"></i></span>
+                        </label>
+                        
+                        <label for="onwaytrip" class="radio-container onwaytrip-c">
+                            On Way Trip
+                            <input type="radio" name="radio" id="onwaytrip" class="onwaytrip">
+                            <span class="checkmark"><i class="ph-fill ph-radio-button"></i></span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="tab_content">
+                    <div class="r-tab active" id="tabone">
+                        
+                      <form action="" method="post">
+
+                        <div class="select-box">
+                            <div class="select-option">
+                                <input type="text" placeholder="Enter Pickup City" id="soValue" readonly name="">
+                            </div>
+
+                            <div class="citybox"><!--content-->
+                                <div class="Search">
+                                    <input type="text" id="optionSearch" placeholder="Search" name="">
+                                </div>
+                                <ul class="options">
+                                    <li>Delhi</li>
+                                    <li>Mumbai</li>
+                                    <li>Uttarakhand</li>
+                                    <li>Gujrat</li>
+                                    <li>Himanchal</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div class="destination-box select-box">
+                            <div class="des-option select-option">
+                                <input type="text" placeholder="Enter Destination City" id="desValue" readonly name="">
+                            </div>
+
+                            <div class="destinationinner citybox"><!--content-->
+                                <div class="Search">
+                                    <input type="text" id="optionSearchdes" placeholder="Search" name="">
+                                </div>
+                                <ul class="dsoptions">
+                                    <li>North Delhi</li>
+                                    <li>Maharastra</li>
+                                    <li>Dehradun</li>
+                                    <li>Ahmadabad</li>
+                                    <li>Shimla</li>
+                                </ul>
+                            </div>
+
+                        </div>
+    
+                        <div class="enquiry-input">
+                            <input type="text" name="name" id="fulname" placeholder="Enter Your Name">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="enquiry-input">
+                            <input type="tel" name="Phone" id="phone" placeholder="Enter Mobile Number">
+                            <span class="error"></span>
+                        </div>
+                      </form>
+                    </div>             
+
+                    <div class="r-tab" id="tabtwo">
+                      <form action="" method="post">
+                        <div class="enquiry-input">
+                            <input type="text" name="Pickup" id="Pickup" placeholder="From Airport / To Airport">
+                            <span class="error"></span>
+                        </div>
+    
+                        <div class="enquiry-input">
+                            <input type="text" name="Destination" id="Destination" placeholder="Select Airport">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="enquiry-input">
+                            <input type="text" name="name" id="fulname" placeholder="Enter Your Name">
+                            <span class="error"></span>
+                        </div>
+    
+                        <div class="enquiry-input">
+                            <input type="tel" name="Phone" id="phone" placeholder="Enter Mobile Number">
+                            <span class="error"></span>
+                        </div>
+                      </form>
+                    </div>
+                    <button value="Search" class="commontBtn">SEARCH CAB</button>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section class="contBx">
+        <div class="main-container d-grid">
+            <div class="contbximg">
+                <img src="img/car-hts.png" alt="car-hts">
+            </div>
+
+            <div class="contbx-block">
+                <h2>Himalayan Taxi Service</h2>
+                <p><strong>Discover Uttarakhand's Treasures with Himalayan Taxi Service</strong></p>
+                <p>Welcome to Himalayan Taxi Service, your gateway to Uttarakhand's wonders. With our 
+                    reliable fleet and experienced drivers, we guarantee a comfortable and safe journey 
+                    through the heart of the Himalayas. Explore the spiritual serenity of Rishikesh, the 
+                    tranquil lakes of Nainital, and the cultural richness of Haridwar. Whether you're a solo  
+                    traveler or in a group, our personalized rides cater to your needs. Immerse yourself in 
+                    Uttarakhand's natural beauty while we take care of the travel details. Start your 
+                    adventure today – book a ride with Himalayan Taxi Service and experience the magic of 
+                    Uttarakhand like never before.</p>
+                <a href="about.html" class="commontBtn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="block-middle">
+        <div class="main-container">
+            <h2>Why Choose Us</h2>
+            <p class="heading-pera">Set forth on an extraordinary expedition with Himalayan Taxi Service, your ultimate companion for Uttarakhand exploration.</p>
+
+            <div class="three-gridbx">
+                <div class="th-inner-bx">
+                    <img src="img/booking.png" alt="booking">
+                    <h3>Effortless Booking</h3>
+                    <p>Simplify your travel arrangements through our user-friendly booking process. Enjoy the convenience of quick reservations, backed by 
+                        dedicated customer support.</p>
+                </div>
+
+                <div class="th-inner-bx">
+                    <img src="img/car-icon.png" alt="Extensive Pickup Network">
+                    <h3>Extensive Pickup Network</h3>
+                    <p>Your convenience is paramount. Select from a 
+                        large number of pickup points, ensuring a 
+                        seamless start to your journey.</p>
+                </div>
+
+                <div class="th-inner-bx">
+                    <img src="img/customer.png" alt="customer">
+                    <h3>Unmatched Customer Satisfaction</h3>
+                    <p>Our unwavering commitment to your 
+                        contentment sets us apart. Impeccably 
+                        researched services guarantee a travel 
+                        experience that exceeds your expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="offer-contx">
+        <div class="main-container">
+            <h2>HTS - Your Ultimate Travel Companion</h2>
+            <p>Looking for a reliable and hassle-free taxi service in the breathtaking landscapes of Uttarakhand? Look no further! At Himalayan Taxi Service, we pride ourselves on being 
+                your perfect travel partner, ensuring safe, comfortable, and timely journeys to your desired destinations. With our team of expert drivers who possess an in-depth knowledge 
+                of local routes and attractions, you're guaranteed an exceptional travel experience like never before.</p>
+
+            <div class="offer-box-grid">
+                <div class="off-bx-in">
+                    <h4><i class="ph-fill ph-seal-check"></i> Regular Taxi Services: </h4>
+                    <p>Our drivers are well-versed in navigating the cities and scenic spots of 
+                        Uttarakhand. With a deep understanding of traffic dynamics, they ensure 
+                        your journey is smooth, timely, and secure. Covering long distances is 
+                        a breeze for our drivers, saving you both time and hassle.</p>
+                </div>
+
+                <div class="off-bx-in">
+                    <h4><i class="ph-fill ph-seal-check"></i> Regular Taxi Services: </h4>
+                    <p>Our drivers are well-versed in navigating the cities and scenic spots of 
+                        Uttarakhand. With a deep understanding of traffic dynamics, they ensure 
+                        your journey is smooth, timely, and secure. Covering long distances is 
+                        a breeze for our drivers, saving you both time and hassle.</p>
+                </div>
+
+                <div class="off-bx-in">
+                    <h4><i class="ph-fill ph-seal-check"></i> Regular Taxi Services: </h4>
+                    <p>Our drivers are well-versed in navigating the cities and scenic spots of 
+                        Uttarakhand. With a deep understanding of traffic dynamics, they ensure 
+                        your journey is smooth, timely, and secure. Covering long distances is 
+                        a breeze for our drivers, saving you both time and hassle.</p>
+                </div>
+
+                <div class="off-bx-in">
+                    <h4><i class="ph-fill ph-seal-check"></i> Regular Taxi Services: </h4>
+                    <p>Our drivers are well-versed in navigating the cities and scenic spots of 
+                        Uttarakhand. With a deep understanding of traffic dynamics, they ensure 
+                        your journey is smooth, timely, and secure. Covering long distances is 
+                        a breeze for our drivers, saving you both time and hassle.</p>
+                </div>
+
+                <div class="off-bx-in">
+                    <h4><i class="ph-fill ph-seal-check"></i> Regular Taxi Services: </h4>
+                    <p>Our drivers are well-versed in navigating the cities and scenic spots of 
+                        Uttarakhand. With a deep understanding of traffic dynamics, they ensure 
+                        your journey is smooth, timely, and secure. Covering long distances is 
+                        a breeze for our drivers, saving you both time and hassle.</p>
+                </div>
+
+                <div class="off-bx-in">
+                    <h4><i class="ph-fill ph-seal-check"></i> Regular Taxi Services: </h4>
+                    <p>Our drivers are well-versed in navigating the cities and scenic spots of 
+                        Uttarakhand. With a deep understanding of traffic dynamics, they ensure 
+                        your journey is smooth, timely, and secure. Covering long distances is 
+                        a breeze for our drivers, saving you both time and hassle.</p>
+                </div>
+
+                <div class="off-bx-in">
+                    <h4><i class="ph-fill ph-seal-check"></i> Regular Taxi Services: </h4>
+                    <p>Our drivers are well-versed in navigating the cities and scenic spots of 
+                        Uttarakhand. With a deep understanding of traffic dynamics, they ensure 
+                        your journey is smooth, timely, and secure. Covering long distances is 
+                        a breeze for our drivers, saving you both time and hassle.</p>
+                </div>
+
+                <div class="off-bx-in">
+                    <h4><i class="ph-fill ph-seal-check"></i> Regular Taxi Services: </h4>
+                    <p>Our drivers are well-versed in navigating the cities and scenic spots of 
+                        Uttarakhand. With a deep understanding of traffic dynamics, they ensure 
+                        your journey is smooth, timely, and secure. Covering long distances is 
+                        a breeze for our drivers, saving you both time and hassle.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="main-container">
+        <div class="banner-bx">
+            <h1>Chardham Yatra <br> Car (Taxi) Rental Service</h1>
+            <p>Char Dham Yatra Cab & Car Rental Taxi Service Booking office. We give best Price 
+                & Car for (Chardham Yatra) Kedarnath Yatra Cab & Car Rental Taxi, Badrinath 
+                Yatra Cab & Car Rental Taxi, Yamunotri Yatra Cab & Car Rental Taxi, & Gangotri 
+                Yatra Cab & Car Rental Taxi,</p>
+            <p class="cc">Call us for any query <a href="#"> +91-7505393495</a></p>
+
+            <div class="banner-car">
+                <img src="img/car-hts.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <section class="bottom-slider-s">
+        <div class="main-container">
+            <h2>Uttarakhand Tour Packages</h2>
+            <p class="heading-pera">Himalayan Taxi Service (HTS) offer transport service in Uttarakhand best tour packages.</p>
+
+            <div class="slid-box-outer">
+                <div class="sld-bx-wrapper">
+                    <a class="sldr-box-inner" href="#">
+                       <div class="tr-im">
+                        <img src="img/slider-img1.jpg" alt="Haridwar Rishikesh Tour Packages">
+                       </div>
+
+                       <p>Haridwar Rishikesh Tour Packages</p>
+                       <p class="themeclr">3 Night | 3 Day</p>
+                    </a>
+
+                    <a class="sldr-box-inner" href="#">
+                        <div class="tr-im">
+                         <img src="img/slider-img1.jpg" alt="Haridwar Rishikesh Tour Packages">
+                        </div>
+ 
+                        <p>Haridwar Rishikesh Tour Packages</p>
+                        <p class="themeclr">3 Night | 3 Day</p>
+                     </a>
+
+                     <a class="sldr-box-inner" href="#">
+                        <div class="tr-im">
+                         <img src="img/slider-img1.jpg" alt="Haridwar Rishikesh Tour Packages">
+                        </div>
+ 
+                        <p>Haridwar Rishikesh Tour Packages</p>
+                        <p class="themeclr">3 Night | 3 Day</p>
+                     </a>
+
+                     <a class="sldr-box-inner" href="#">
+                        <div class="tr-im">
+                         <img src="img/slider-img1.jpg" alt="Haridwar Rishikesh Tour Packages">
+                        </div>
+ 
+                        <p>Haridwar Rishikesh Tour Packages</p>
+                        <p class="themeclr">3 Night | 3 Day</p>
+                     </a>
+                </div>
+
+                <button type="button" data-role="none" class="slick-prev slick-arrow"><i class="ph-bold ph-caret-left"></i></button>
+                <button type="button" data-role="none" class="slick-next slick-disabled slick-arrow"><i class="ph-bold ph-caret-right"></i></button>
+
+            </div>
+            <a href="packages.html" class="commontBtn">More Packages</a>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="main-container">
+
+            <div class="footer-grid">
+                <div class="footer-box">
+                    <div class="logo-dv">
+                        <img src="img/logo.png" alt="Footer logo">
+                    </div>
+
+                    <div class="socila-icon">
+                        <a href="#"><i class="ph-bold ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-bold ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-box">
+                 <h3>Quick Links</h3>
+                 <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Taxi Service</a></li>
+                    <li><a href="#">Tour Package</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>    
+                 </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Contact Us</h3>
+                    
+                    <div class="contact-bx">
+                        <a href="#"><i class="ph-fill ph-map-pin"></i> Dehradun Rishikesh Road Beerpur, Opposite Nayara Petrol Pump Ranipokhri - 248145 Uttarakhand India</a>
+                        <a href="#"><i class="ph-fill ph-phone-call"></i> +91-9761162608, 75053 93495</a>
+                        <a href="#"><i class="ph-fill ph-envelope"></i> info@himalayantaxiservice.com</a>
+                    </div>
+                   </div>
+
+                   <div class="footer-right">
+                    <h3>Request a Callback</h3>
+                    <form action="">
+                        <div class="enquiry-input">
+                            <input type="text" name="Name" placeholder="Callback Date & Time">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="enquiry-input">
+                            <input type="text" name="name" id="fulname" placeholder="Enter Your Name">
+                            <span class="error"></span>
+                        </div>
+    
+                        <div class="enquiry-input">
+                            <input type="tel" name="Name" placeholder="Enter the Mobile Number">
+                            <span class="error"></span>
+                        </div>
+    
+                        <button value="submit" class="commontBtn">Submit</button>
+                    </form>
+                </div>
+
+
+                <div class="footer-box foter-services">
+                    <h3>Services</h3>
+                    <ul class="services-list">
+                       <li><a href="#">Haridwar Taxi Service</a></li>
+                       <li><a href="#">Rishikesh Taxi Service</a></li>
+                       <li><a href="#">Dehradun Taxi Service</a></li>
+                       <li><a href="#">Mussoorie Taxi Service</a></li>
+                       <li><a href="#">Auli Taxi Service</a></li>
+                       <li><a href="#">Chopta Taxi Service</a></li>
+                       <li><a href="#">Chardham Yatra Taxi Service</a></li> 
+                       <li><a href="#">Kedarnath Badrinath Yatra Taxi Service</a></li> 
+                       <li><a href="#">Yamunotri Gangotri Yatra </a></li> 
+                       <li><a href="#">Taxi Service</a></li> 
+                       <li><a href="#">Kedarnath Taxi Service</a></li> 
+                       <li><a href="#">Badrinath Taxi Service</a></li> 
+                       <li><a href="#">Gangotri Taxi Service</a></li> 
+                       <li><a href="#">Auli Chopta Taxi Service</a></li> 
+                       <li><a href="#">Rishikesh To Delhi Taxi Service</a></li> 
+                       <li><a href="#">Haridwar To Nanital Taxi Service</a></li>
+                       <li><a href="#">Dehradun Jolly Grant Airport  </a></li> 
+                       <li><a href="#">Taxi Service</a></li> 
+
+                    </ul>
+                   </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 Himalayan Taxi Service | Website Developed By <a href="https://www.witsdigital.com/">Wits Digital</a> </p>
+        </div>
+    </footer>
+
+    <button class="scroll-top show" id="scrollTop"><i class="ph-bold ph-caret-up"></i></button>
+    <div class="fixedstickybtn">
+        <a href="#" class="callNow sticky-flex"><i class="ph-fill ph-phone-call"></i></a>
+        <a href="#" class="whatasp sticky-flex"><i class="ph-bold ph-whatsapp-logo"></i></a>
+    </div>
+    
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>

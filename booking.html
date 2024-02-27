@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Hts</title>
+</head>
+<body>
+
+    <header>
+        <div class="main-container d-flex">
+           <div class="header-left">
+            <a href="#" class="logo-img"><img src="img/logo.png" alt="hts logo"></a>
+           </div>
+
+           <nav id="responsiveNav">
+            <ul class="navlinks">
+                <li><a href="index.html" id="click">HOME</a></li>
+                <li><a href="about.html" id="click">ABOUT US</a></li>
+                <li><a href="services.html" id="click">TAXI SERVICE</a><i class="ph-bold ph-caret-down"></i>
+                    <ul class="submenu">
+                        <li><a href="detailsPage.html" id="click">Haridwar Taxi Service</a></li>
+                        <li><a href="#" id="click">Rishikesh Taxi Service</a></li>
+                        <li><a href="#" id="click">Dehradun Taxi Service</a></li>
+                        <li><a href="#" id="click">Mussoorie Taxi Service</a></li>
+                        <li><a href="#" id="click">Auli Taxi Service</a></li>
+                        <li><a href="#" id="click">Chopta Taxi Service</a></li>
+                        <li><a href="#" id="click">Chardham Yatra Taxi Service</a></li>
+                        <li><a href="#" id="click">Kedarnath Badrinath Taxi Service</a></li>
+                        <li><a href="#" id="click">Yamunotri Gangotri Taxi Service</a></li>
+                        <li><a href="#" id="click">Kedarnath Taxi Service</a></li>
+                        <li><a href="#" id="click">Badrinath Taxi Service</a></li>
+                        <li><a href="#" id="click">Gangotri Taxi Service</a></li>
+                        <li><a href="#" id="click">Auli Chopta Taxi Service</a></li>
+                        <li><a href="#" id="click">Rishikesh To Delhi Taxi Service</a></li>
+                        <li><a href="#" id="click">Haridwar to Nanital Taxi Service</a></li>
+                        <li><a href="#" id="click">Dehradun Jolly Grant Airport Taxi Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="packages.html" id="click">PACKAGE</a></li>
+                <li><a href="cars.html" class="carsc" id="click">CARS</a></li>
+                <li><a href="contact.html" id="click">CONTACT US</a></li>
+
+            </ul>
+
+            <button class="nav_btn_close" onclick="nav_close();">
+                <i class="ph-fill ph-x-circle"></i>
+              </button>
+           </nav>
+
+           <div class="header-right">
+            <a href="tel:+917505393495"><i class="ph-fill ph-phone"></i><span>+917505393495</span></a>
+
+            <button class="nav_btn_open" id="menutroggle" onclick="nav_open();">
+                <i class="ph ph-list"></i>
+              </button>
+           </div>
+        </div>
+    </header>
+
+
+
+    <section class="top-bg-inner booking-tp-bg">
+        <div class="main-container">
+            <!-- <div class="top-bg-img-abs">
+                <img src="img/car-hts.png" alt="cars-packages">
+            </div> -->
+           
+            <h1>Ride Safe,Fast and Easy</h1>
+            <div class="broadcrumb">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li> Booking</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+<section class="main-container">
+    <div class="book-block">
+       
+        <form action="" method="post">
+
+          <div class="form-inner trip-d">
+            <h2>Trip Detail</h2>
+            <div class="form-flexx">
+
+                <div class="booking-enquiry">
+                    <input type="text" name="pickup" id="pcity" placeholder="Pickup City*" required>
+                </div>
+
+                <div class="booking-enquiry">
+                    <input type="text" name="drop" id="dcity" placeholder="Drop City*" required>
+                </div>
+                
+                <div class="booking-enquiry">
+                    <input type="date" name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="booking-enquiry">
+                    <input type="time" id="appt" name="pickup_time" placeholder="Pickup Time*" value="22:00" required  />
+                    <span class="error"></span>
+                </div>
+
+                <div class="booking-enquiry">
+                    <input type="text" name="address" id="addres" placeholder="Pickup Address*" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="booking-enquiry">
+                    <input type="text" name="dropoff" id="dropoff" placeholder="Drop off*" required>
+                    <span class="error"></span>
+                </div>
+            </div>
+          </div>
+
+          <div class="form-inner">
+            <h2>Personal Detail</h2>
+            <div class="form-flexx">
+                <div class="booking-enquiry">
+                    <input type="text" name="name" id="fName" placeholder="Name*" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="booking-enquiry">
+                    <input type="tel" name="phone" id="phone" placeholder="Phone Number*"  minlength="6"  maxlength="10" required>
+                    <span class="error"></span>
+                </div>
+
+                <div class="booking-enquiry">
+                    <input type="email" name="email" id="email" placeholder="Email ID">
+                    <span class="error"></span>
+                </div>
+
+                <div class="booking-enquiry">
+                   <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Remarks"></textarea>
+                </div>
+                
+            </div>
+          </div>
+
+          <div class="booking-enquiry search-btn">
+            <button value="Send"><a href="thank-you.html">Submit</a></button>
+         </div>
+        </form>
+    
+               
+
+             
+    </div>
+</section>
+
+
+ 
+
+
+    <footer>
+        <div class="main-container">
+
+            <div class="footer-grid">
+                <div class="footer-box">
+                    <div class="logo-dv">
+                        <img src="img/logo.png" alt="Footer logo">
+                    </div>
+
+                    <div class="socila-icon">
+                        <a href="#"><i class="ph-bold ph-facebook-logo"></i></a>
+                        <a href="#"><i class="ph-bold ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-box">
+                 <h3>Quick Links</h3>
+                 <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Taxi Service</a></li>
+                    <li><a href="#">Tour Package</a></li>
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>    
+                 </ul>
+                </div>
+
+                <div class="footer-box">
+                    <h3>Contact Us</h3>
+                    
+                    <div class="contact-bx">
+                        <a href="#"><i class="ph-fill ph-map-pin"></i> Dehradun Rishikesh Road Beerpur, Opposite Nayara Petrol Pump Ranipokhri - 248145 Uttarakhand India</a>
+                        <a href="#"><i class="ph-fill ph-phone-call"></i> +91-9761162608, 75053 93495</a>
+                        <a href="#"><i class="ph-fill ph-envelope"></i> info@himalayantaxiservice.com</a>
+                    </div>
+                   </div>
+
+                   <div class="footer-right">
+                    <h3>Request a Callback</h3>
+                    <form action="">
+                        <div class="enquiry-input">
+                            <input type="text" name="Name" placeholder="Callback Date & Time">
+                            <span class="error"></span>
+                        </div>
+
+                        <div class="enquiry-input">
+                            <input type="text" name="name" id="fulname" placeholder="Enter Your Name">
+                            <span class="error"></span>
+                        </div>
+    
+                        <div class="enquiry-input">
+                            <input type="tel" name="Name" placeholder="Enter the Mobile Number">
+                            <span class="error"></span>
+                        </div>
+    
+                        <button value="submit" class="commontBtn">Submit</button>
+                    </form>
+                </div>
+
+
+                <div class="footer-box foter-services">
+                    <h3>Services</h3>
+                    <ul class="services-list">
+                       <li><a href="#">Haridwar Taxi Service</a></li>
+                       <li><a href="#">Rishikesh Taxi Service</a></li>
+                       <li><a href="#">Dehradun Taxi Service</a></li>
+                       <li><a href="#">Mussoorie Taxi Service</a></li>
+                       <li><a href="#">Auli Taxi Service</a></li>
+                       <li><a href="#">Chopta Taxi Service</a></li>
+                       <li><a href="#">Chardham Yatra Taxi Service</a></li> 
+                       <li><a href="#">Kedarnath Badrinath Yatra Taxi Service</a></li> 
+                       <li><a href="#">Yamunotri Gangotri Yatra </a></li> 
+                       <li><a href="#">Taxi Service</a></li> 
+                       <li><a href="#">Kedarnath Taxi Service</a></li> 
+                       <li><a href="#">Badrinath Taxi Service</a></li> 
+                       <li><a href="#">Gangotri Taxi Service</a></li> 
+                       <li><a href="#">Auli Chopta Taxi Service</a></li> 
+                       <li><a href="#">Rishikesh To Delhi Taxi Service</a></li> 
+                       <li><a href="#">Haridwar To Nanital Taxi Service</a></li>
+                       <li><a href="#">Dehradun Jolly Grant Airport  </a></li> 
+                       <li><a href="#">Taxi Service</a></li> 
+
+                    </ul>
+                   </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2024 Himalayan Taxi Service | Website Developed By <a href="https://www.witsdigital.com/">Wits Digital</a> </p>
+        </div>
+    </footer>
+    <button class="scroll-top show" id="scrollTop"><i class="ph-bold ph-caret-up"></i></button>
+    <div class="fixedstickybtn">
+        <a href="#" class="callNow sticky-flex"><i class="ph-fill ph-phone-call"></i></a>
+        <a href="#" class="whatasp sticky-flex"><i class="ph-bold ph-whatsapp-logo"></i></a>
+    </div>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+</body>
+</html>
